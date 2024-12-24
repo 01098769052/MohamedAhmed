@@ -1,0 +1,63 @@
+section
+{
+    min-height: 70vh;
+}
+.bg-lightGreen
+{
+    background-color: #1ABC9C;
+}
+.lineAB
+{
+    position: relative;
+}
+.lineAB::after
+{
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    left: 60%;
+    top: 50%;
+}
+.lineAB::before
+{
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    left: -7%;
+    top: 50%;
+}
+@media screen and (max-width : 700px) {
+    .lineAB::before
+    {
+        left: 60%;
+        
+    }
+    .lineAB::after
+    {
+        left: -5%;
+        
+    }
+}
+@media screen and (min-width : 518px) and (max-width : 770px) {
+    .lineAB::before
+    {
+        left: 57%;
+        
+    }
+    .lineAB::after
+    {
+        left: 0.2%;
+        
+    }
+}
+@media screen and (min-width : 540px) and (max-width : 690px) {
+    .lineAB::after
+    {
+        left: 3%;
+        
+    }
+}

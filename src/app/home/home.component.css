@@ -1,0 +1,76 @@
+.bg-lightGreen
+{
+    background-color: #1ABC9C;
+}
+.lineAB
+{
+    position: relative;
+}
+.lineAB::after
+{
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    left: 17%;
+    top: 50%;
+}
+.lineAB::before
+{
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    left: 57%;
+    top: 50%;
+}
+@media screen and (max-width : 700px) {
+    .lineAB::before
+    {
+        left: 53.5%;
+        width: 80px;
+    }
+    .lineAB::after
+    {
+        left: 28.5%;
+        width: 80px;
+    }
+    .card-body h1
+    {
+        text-align: center !important;
+    }
+}
+@media screen and (min-width : 700px) and (max-width : 992px) {
+    .lineAB::before
+    {
+        left: 54%;
+        width: 80px;
+    }
+    .lineAB::after
+    {
+        left: 27%;
+        width: 80px;
+    }
+    .card-body h1
+    {
+        text-align: center !important;
+    }
+}
+@media screen and (min-width : 992px) and (max-width : 1400px) {
+    .lineAB::before
+    {
+        left: 54%;
+        width: 80px;
+    }
+    .lineAB::after
+    {
+        left: 27%;
+        width: 80px;
+    }
+    .card-body h1
+    {
+        text-align: center !important;
+    }
+}

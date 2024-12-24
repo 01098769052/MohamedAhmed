@@ -1,0 +1,14 @@
+.bg-semiDark
+{
+    background-color: #2C3E50;
+}
+#icon i
+{
+    width: 37px;
+    height: 37px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
